@@ -10,9 +10,10 @@ const TopContainer = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/mainimage.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-    transform: translate(0);
+  transform: translate(0);
+  background-position: center center;
   @media screen and (max-width: 600px) {
-    background-size: 100% 70%;
+  background-size: 100% 70%;
   }
   }
 `;
