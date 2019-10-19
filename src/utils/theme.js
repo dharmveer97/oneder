@@ -38,7 +38,7 @@ export const theme = {
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Open Sans', sans-serif",
+  primaryFontFamily: "'Roboto', sans-serif",
   secondaryFontFamily: "'Open Sans', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset};
 
   body {
-    font-family: ${theme.secondaryFontFamily};
+    font-family: ${theme.primaryFontFamily};
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
