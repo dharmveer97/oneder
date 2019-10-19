@@ -3,13 +3,17 @@ import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
+import HeroHeader from '../components/HeroHaader';
 
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
+const TopContainer = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/mainimage.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+    transform: translate(0);
+  @media screen and (max-width: 600px) {
+    background-size: 100% 70%;
+  }
   }
 `;
 
@@ -18,13 +22,10 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section className="section">
-          <Container className="container">
-            <h1 className="title">Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-          </Container>
-        </section>
+        <TopContainer>
+          <Header />
+          <HeroHeader />
+        </TopContainer>
       </Layout>
     );
   }
