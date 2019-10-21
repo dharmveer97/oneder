@@ -24,10 +24,13 @@ const Section = styled.section`
     }
   }
   .navbar-item {
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.2rem;
+    border-radius: 15px;
+    transition: color 2s;
     :hover {
-      color: ${props => props.theme.darkAccent};
+      color: ${props => props.theme.darkShades};
     }
   }
   .navbar-burger {
