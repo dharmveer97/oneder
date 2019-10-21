@@ -16,6 +16,7 @@ const Container = styled.div`
   }
   span {
     color: #71bc42;
+    margin-right: 10px;
   }
   .button {
     margin-top: 2rem;
@@ -55,19 +56,19 @@ const Buisness = () => (
                 Officia quaerat eaque neque
               </li>
               <li>
-                <span classNAme="icon is-left">
+                <span classNAme="icon">
                   <i className="fas fa-check" />
                 </span>
                 Possimus aut consequuntur incidunt
               </li>
               <li>
-                <span classNAme="icon is-left">
+                <span classNAme="icon">
                   <i className="fas fa-check" />
                 </span>
                 Lorem ipsum dolor sit amet
               </li>
               <li>
-                <span classNAme="icon is-left">
+                <span classNAme="icon">
                   <i className="fas fa-check" />
                 </span>
                 Consectetur adipisicing elit
