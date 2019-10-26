@@ -8,6 +8,7 @@ import HeroHeader from '../components/HeroHaader';
 import Buisness from '../components/Buisness';
 import Team from '../components/Team';
 import TeamMemberData from '../components/TeamMemberData';
+import Tabs from '../components/Tabs';
 
 const TopContainer = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/mainimage.jpg);
@@ -33,6 +34,7 @@ export default class IndexPage extends React.Component {
         <Buisness />
         <Team />
         <TeamMemberData />
+        <Tabs />
       </Layout>
     );
   }
